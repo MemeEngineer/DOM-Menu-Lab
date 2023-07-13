@@ -17,3 +17,19 @@ mainEl.classList.add('flex-ctr')
 
 //==== task 2.0
 
+const topMenuEl = document.querySelector("nav")
+console.log(topMenuEl)
+
+//===== 2.1
+topMenuEl.style.height= '100%'
+
+//==== task 2.2
+
+topMenuEl.style.backgroundColor= 'var(--top-menu-bg)'
+
+//====== task 2.3
+
+topMenuEl.classList.add('flex-around')
+
+//===== task 3.0
+
