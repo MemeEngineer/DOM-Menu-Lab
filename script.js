@@ -1,3 +1,11 @@
+// Menu data structure
+var menuLinks = [
+    {text: 'about', href: '/about'},
+    {text: 'catalog', href: '/catalog'},
+    {text: 'orders', href: '/orders'},
+    {text: 'account', href: '/account'},
+  ];
+
 //==== Task 1.0
 const mainEl = document.querySelector('main')
 console.log(mainEl)
@@ -33,3 +41,14 @@ topMenuEl.classList.add('flex-around')
 
 //===== task 3.0
 
+//see top
+
+
+//==== task 3.1
+
+for( let link of menuLinks ){
+    const menu =document.createElement('a')
+    menu.setAttribute('href', link.href)
+    menu.innerHTML= link.text
+    topMenuEl.append(menu)
+} 
